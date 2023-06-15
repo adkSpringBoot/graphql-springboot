@@ -1,0 +1,44 @@
+localhost url :http://localhost:9999/graphql
+
+Query for CRUD operation (Contact management):
+
+# get Contact details:
+
+query GetContact {
+    getContact(bookId: 1) {
+        id
+        name
+        city
+        state
+    }
+}
+
+# create Contact details:
+
+mutation CreateContact {
+    createContact(
+        contactPojo: {name: "ravi gupta", city: "mumbai", state: "maharastra"}
+    ) {
+        id
+        name
+        city
+        state
+    }
+}
+
+# update Contact details:
+
+mutation UpdateContact {
+    updateContact(id: "1", contact: {name: "ken", city: "kerla", state: "kerla"}) {
+        id
+        name
+        city
+        state
+    }
+}
+
+# delete Contact details
+
+mutation DeleteContact {
+    deleteContact(id: "1")
+}

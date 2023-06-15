@@ -1,0 +1,22 @@
+type Mutation{
+createContact(contactPojo:ContactPojo):Contact
+deleteContact(id: ID!): Boolean
+updateContact(id:ID!,contact: ContactPojo): Contact!
+    }
+type Query{
+    getContact(bookId:Int):Contact
+}
+
+type Contact{
+    id:ID!
+    name:String
+    city:String
+    state:String
+}
+
+input ContactPojo{
+    name:String
+    city:String
+    state:String
+}
+
