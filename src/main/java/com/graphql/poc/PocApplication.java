@@ -1,6 +1,5 @@
 package com.graphql.poc;
 
-import com.graphql.poc.entities.Contact;
 import com.graphql.poc.pojo.ContactPojo;
 import com.graphql.poc.services.ContactService;
 import org.springframework.beans.factory.annotation.Autowired;

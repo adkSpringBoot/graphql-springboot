@@ -2,7 +2,6 @@ package com.graphql.poc.services;
 
 import com.graphql.poc.entities.Contact;
 import com.graphql.poc.pojo.ContactPojo;
-import com.graphql.poc.repositories.ContactRepo;
 
 import java.util.List;
 
