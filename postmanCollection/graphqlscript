@@ -1,4 +1,4 @@
-localhost url :http://localhost:9999/graphql
+Localhost url :http://localhost:9999/graphql
 
 Query for CRUD operation (Contact management):
 
